@@ -6,7 +6,8 @@
   "main": "electron/main.js",
   "browser": "src/app.js",
   "scripts": {
-    "start": "pnpm run dev",//electron .
+    //electron .
+    "start": "pnpm run dev",
     "build": "browserify src/app.js -o bundle.js",
     "build:validator": "echo \"window.gltfValidator = require('gltf-validator');\" | browserify - > lib/gltf-validator.js",
     "build:registry": "curl https://rawgit.com/KhronosGroup/glTF-Generator-Registry/master/registry.json -o lib/gltf-generator-registry.json",
