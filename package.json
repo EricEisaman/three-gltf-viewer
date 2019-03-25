@@ -6,7 +6,6 @@
   "main": "electron/main.js",
   "browser": "src/app.js",
   "scripts": {
-    //electron .
     "start": "pnpm run dev",
     "build": "browserify src/app.js -o bundle.js",
     "build:validator": "echo \"window.gltfValidator = require('gltf-validator');\" | browserify - > lib/gltf-validator.js",
